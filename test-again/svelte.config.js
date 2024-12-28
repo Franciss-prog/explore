@@ -1,4 +1,3 @@
-import { version } from '$service-worker';
 import adapter from '@sveltejs/adapter-auto';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
@@ -17,8 +16,7 @@ const config = {
 			out: 'build',
 			precompress: false,
 			// Remove the `fallback` option if you don't want to use a fallback page
-			fallback: null,
-			version: 20,
+			fallback: null
 		})
 	}
 };
